@@ -6,17 +6,20 @@ import { grocerylistStore } from '../../grocerylistStore.js';
 const exportText = computed(() => {
 
     let exportTextVal = '';
+    let slNo = 1;
 
     exportTextVal += grocerylistStore.prependContent + '\n\n';
 
     grocerylistStore.list.forEach((item) => {
 
         if(item.quantity > 0) {
-            exportTextVal += item.name;
+            exportTextVal += slNo + '. ' + item.name;
             if(item.quantity > 1) {
                 exportTextVal += ' x ' + item.quantity;
             }
             exportTextVal += '\n';
+
+            slNo++;
         }
 
     });
