@@ -14,11 +14,18 @@
 </script>
 
 <template>
-	<h1>Grocery List</h1>
+	<div class="h-screen flex flex-col bg-gray-50">
+		
+		<header class="fixed top-0 inset-x-0 h-14 bg-purple-600 text-white flex items-center justify-center shadow z-10">
+			<h1 class="text-lg font-semibold tracking-wide">Grocery List</h1>
+		</header>
 
-	<ListScreen  v-if="currentScreen == 'list'" @updateCurrentScreen="updateCurrentScreen" />
-	<ExportScreen  v-if="currentScreen == 'export'" @updateCurrentScreen="updateCurrentScreen" />
-
+		<main class="flex-1 pt-14">
+			<ListScreen v-if="currentScreen === 'list'" @updateCurrentScreen="updateCurrentScreen" />
+			<ExportScreen v-if="currentScreen === 'export'" @updateCurrentScreen="updateCurrentScreen" />
+		</main>
+	</div>
 </template>
+
 
 <style scoped></style>
