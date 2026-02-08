@@ -14,7 +14,7 @@
 </script>
 
 <template>
-	<div class="h-screen flex flex-col bg-gray-50">
+	<div class="h-screen flex flex-col bg-gray-50 font-jost">
 		
 		<header class="fixed top-0 inset-x-0 h-14 bg-purple-600 text-white flex items-center justify-center shadow z-10">
 			<h1 class="text-lg font-semibold tracking-wide">Grocery List</h1>
