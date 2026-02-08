@@ -1,0 +1,20 @@
+{
+    "prependContent": "Good Morning,\nfollowing are the groceries required for the week",
+    "appendContent": "Ensure items are door delivered.\nThank you",
+    "list": [
+        "Rice - 5 Kg",
+        "Wheat - 5 Kg",
+        "Refined sugar - 1 Kg",
+        "Tabled salt - 1 Kg",
+        "Olive Oil - 500 ml",
+        "Refined groundnut oil - 1 Lit",
+        "Dishwash liquid - 500 ml",
+        "Bath soap - 100 gm",
+        "Hand wash - 200 ml",
+        "Pasta - 500 gm",
+        "Peanut butter - 250 gm",
+        "Flour - 1 Kg",
+        "Corn - 500 gm",
+        "Soft drink - 500 ml"
+    ]
+}
